@@ -1,6 +1,6 @@
-import Navbar from "@/app/components/Navbar"
-import Footer from "@/app/components/Footer"
-import Homecontainer from "@/app/components/HomeContainer"
+import Navbar from "@/src/app/components/Navbar"
+import Footer from "@/src/app/components/Footer"
+import Homecontainer from "@/src/app/components/HomeContainer"
 
 
 
@@ -10,7 +10,6 @@ export default function Home() { //TODOS LOS COMPONENTES DE REACT EMPIEZAN EN MA
       <Navbar />
       <Homecontainer />
       <Footer />
-
     </div>
   );
 }

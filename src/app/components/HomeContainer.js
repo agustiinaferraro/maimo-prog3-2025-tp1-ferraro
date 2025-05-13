@@ -1,4 +1,4 @@
-import RecipesGrid from "@/app/components/RecipesGrid"
+import RecipesGrid from "@/src/app/components/RecipesGrid"
 import Image from 'next/image'
 const HomeContainer = () => {
   return (
