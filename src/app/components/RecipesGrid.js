@@ -11,6 +11,7 @@ import { useState, useEffect } from "react"; //son hooks de react
 import RecipeCard from "@/src/app/components/RecipeCard";
 import parsedData from "@/src/data/recipes"; //despues borrar
 import axios from 'axios'
+import Loading from "@/src/app/components/Loading"
 
 /*const RecipesGrid = () => {
     
@@ -75,21 +76,17 @@ useEffect(()=>{
       }
       */}
 
-      {loading 
-        ? "loading..." // si está cargando, muestra esto
-        : data.map((recipe) => {
-            // return de la card
-            return (
+      {!loading &&
+            data.map((recipe) => (
               <RecipeCard 
                 key={recipe.id} 
                 name={recipe.name} 
                 image={recipe.image} 
                 id={recipe.id}
               />
-            )
-        })}
+      ))}
 
-        {loading && "loading..."}
+      {loading && <Loading />}
       {error && "hubo un error"}
     </div>
   );

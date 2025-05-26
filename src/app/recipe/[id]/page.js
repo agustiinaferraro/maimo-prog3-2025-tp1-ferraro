@@ -1,4 +1,4 @@
-import RecipeContainer from "../components/recipeContainer";
+import RecipeContainer from "../../components/recipeContainer";
 
 const Recipe = async ({ params }) => {
   const { id } = params;
