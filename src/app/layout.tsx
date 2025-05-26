@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Kanit } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const kanit = Kanit({
   variable: "--font-kanit",
@@ -23,7 +25,9 @@ export default function RootLayout({
       <body
         className={`${kanit.variable} antialiased`}
       >
+        <Navbar title="Las Mejores Recetas" year={2025} />
         {children}
+        <Footer />
       </body>
     </html>
   );
