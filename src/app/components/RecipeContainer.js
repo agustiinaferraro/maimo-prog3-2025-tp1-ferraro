@@ -33,7 +33,6 @@ const RecipeContainer = ({id}) => {
 
   return (
     <div className="recipeContainer">
-
       <div className="grilla">
         <div className="imgContainer">
           <h2>{recipe.name}</h2>
@@ -56,7 +55,7 @@ const RecipeContainer = ({id}) => {
           <li key={index}>{instruction} {/* index es la posición de la instrccion */}</li> 
         ))}
       </ul>
-
+     <a href="/" className="btn-back">Volver</a>
     </div>
   )
 }

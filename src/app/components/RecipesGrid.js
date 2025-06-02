@@ -13,20 +13,6 @@ import parsedData from "@/src/data/recipes"; //despues borrar
 import axios from 'axios'
 import Loading from "@/src/app/components/Loading"
 
-/*const RecipesGrid = () => {
-    
-  return (
-    <div className="recipes_grid">
-
-    {parsedData.recipes.map((recipe) => {
-    
-    <RecipeCard key={recipe.id} name={recipe.name} image={recipe.image} />
-    })}
-
-    </div>
-  )
-}*/
-
 const RecipesGrid = () => {
   //en este espacio, entre el componente y el return, va solo javascript (puedo implementatr html con ``)
   const [data, setData] = useState([]) //en los corchetes siempre va una variable y un metodo que grabe el state. 

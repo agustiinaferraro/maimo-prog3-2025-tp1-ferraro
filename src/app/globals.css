@@ -375,19 +375,32 @@ footer div {
   margin: 0px !important;
 }
 
-#btn-back {
-  font-size: 2em;
-  background: none;
-  border: none;
-  color: aliceblue;
+.btn-back {
+  display: inline-block;
+  margin: 30px 0;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background 0.3s ease;
 }
 
-#btn-back:hover {
-  color: rgb(200, 200, 200);   
+.btn-back:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-#btn-back:active {
-  color: rgb(166, 166, 166);   
+.btn-back:active {
+  background-color: rgba(202, 202, 202, 0.2);
+}
+
+.loading {
+  width: 20%;
+  height: 20%;
+  margin: 0 auto;
 }
 
 @media (min-width: 1024px) {
